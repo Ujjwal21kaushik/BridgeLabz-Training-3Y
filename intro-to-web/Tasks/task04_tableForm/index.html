@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="width: 100%; height: 100%;">
+    <form action="#" >
+        <table border="1" cellpadding="10" cellspacing="1" style="margin:50px auto; width: 30rem; height: 35rem;">
+            <tr>
+                <th colspan="2">Registraction form</th>
+            </tr>
+            <tr>
+                <th style="width: 30%;"></th>
+                <th style="width: 70%;"></th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="tel" name="contact" placeholder="Enter your phone Number"></td>
+            </tr>
+            <tr>
+                <td>Date Of Birth</td>
+                <td><input type="date" name="date" id="date"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Course</td>
+                <td>
+                    <select name="course" id="course">
+                        <option>Select course</option>
+                        <option value="html">html</option>
+                        <option value="css">css</option>
+                        <option value="js">js</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="address" id="address" rows="5" cols="30" placeholder="Enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <th colspan="2"><button type="submit">Submit</button> <button type="reset">Reset</button></th>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
