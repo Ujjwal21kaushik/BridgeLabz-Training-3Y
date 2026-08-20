@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Submission</title>
+</head>
+<body>
+    <h1>Simple Form</h1>
+
+    <!-- The iframe is the target for the form submission. -->
+    <form action="result.html" method="get" target="resultFrame">
+        <label for="message">Enter Text:</label>
+        <input type="text" id="message" name="message" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+
+    <iframe
+        name="resultFrame"
+        src="about:blank"
+        width="500"
+        height="150"
+        title="Submission Result">
+    </iframe>
+</body>
+</html>
