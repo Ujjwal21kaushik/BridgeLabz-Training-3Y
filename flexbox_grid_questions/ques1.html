@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q1 - Personal Portfolio</title>
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;min-height:100vh;display:flex;flex-direction:column;background:#f4f7fb;color:#222}
+header{background:#1f2937;color:white;padding:20px 7%;display:flex;align-items:center;justify-content:space-between}
+header h1{margin:0} nav{display:flex;gap:25px} nav a{color:white;text-decoration:none}
+main{flex:1;display:flex;align-items:center;justify-content:center;gap:50px;padding:50px 8%}
+.about,.image{flex:1;display:flex;align-items:center;justify-content:center}
+.about{flex-direction:column;max-width:600px}.about h2{font-size:40px;margin:0 0 15px}.about p{line-height:1.7}
+.image img{width:min(100%,380px);height:380px;object-fit:cover;border-radius:20px}
+footer{text-align:center;padding:20px;background:#111827;color:white}
+@media(max-width:700px){header,main{flex-direction:column;text-align:center}nav{flex-wrap:wrap;justify-content:center}.image img{height:280px}main{gap:30px}}
+</style>
+</head>
+<body>
+<header><h1>Ujjwal Kaushik</h1><nav><a href="#">Home</a><a href="#">About</a><a href="#">Projects</a><a href="#">Contact</a></nav></header>
+<main><section class="about"><h2>About Me</h2><p>Hello! I am a passionate web developer who enjoys building clean, responsive and interactive websites. I love learning new technologies and turning ideas into useful digital experiences.</p></section>
+<section class="image"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=700" alt="Profile"></section></main>
+<footer>&copy; 2026 Ujjwal Kaushik. All rights reserved.</footer>
+</body>
+</html>
