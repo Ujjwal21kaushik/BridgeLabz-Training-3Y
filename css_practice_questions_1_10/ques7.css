@@ -1,0 +1,100 @@
+/* Q7: Typography, font families, weights, sizes and pseudo-elements */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #0f172a;
+    color: white;
+}
+
+.article {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #0002;
+}
+
+.article h2 {
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.serif {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    line-height: 1.8;
+}
+
+.sans {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+.special {
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+mark {
+    background: #fde68a;
+    color: #78350f;
+    padding: 2px 5px;
+}
+
+strong {
+    color: #1d4ed8;
+}
+
+em {
+    color: #be123c;
+}
+
+/* ::first-letter emphasizes the first character. */
+.special::first-letter {
+    font-size: 42px;
+    font-weight: bold;
+    color: #7c3aed;
+}
+
+/* ::first-line emphasizes the first line. */
+.serif::first-line {
+    font-weight: 700;
+    color: #334155;
+}
+
+.details {
+    margin-top: 30px;
+    padding: 25px;
+    background: #eff6ff;
+    border-left: 5px solid #2563eb;
+}
+
+.details p {
+    text-align: justify;
+    line-height: 1.9;
+    letter-spacing: 0.4px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: white;
+}

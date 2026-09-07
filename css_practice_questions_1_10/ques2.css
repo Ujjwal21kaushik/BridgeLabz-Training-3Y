@@ -1,0 +1,92 @@
+/* Q2: Height, width, min/max dimensions and overflow */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #e0f2fe;
+    color: #0f172a;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    background: #075985;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    padding: 35px;
+}
+
+.size-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.size-box {
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.box-one {
+    width: 220px; /* px unit */
+    height: 180px; /* px unit */
+    background: #fecaca;
+}
+
+.box-two {
+    width: 40%; /* percentage unit */
+    min-height: 220px; /* minimum height */
+    background: #bbf7d0;
+}
+
+.box-three {
+    width: 30vw;
+    height: 28vh; /* viewport height */
+    max-width: 18em; /* maximum width */
+    min-height: 200px;
+    background: #ddd6fe;
+}
+
+.overflow-demo {
+    margin-top: 10px;
+    height: 55px;
+    overflow: auto; /* Extra content becomes scrollable */
+    padding: 8px;
+    background: #ffffff99;
+    border-radius: 8px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+@media (max-width: 700px) {
+    .box-two {
+        width: 90%;
+    }
+
+    .box-three {
+        width: 80vw;
+    }
+}

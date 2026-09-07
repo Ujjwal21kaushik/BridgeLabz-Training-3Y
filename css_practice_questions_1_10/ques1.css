@@ -1,0 +1,83 @@
+/* Q1: Borders, border-radius, padding and Flexbox */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0f172a;
+    color: white;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    padding: 45px 5%;
+}
+
+.boxes {
+    display: flex; /* Align all boxes horizontally */
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.box {
+    width: 190px;
+    min-height: 150px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-color: #334155;
+    transition: border-color 0.3s ease;
+}
+
+.box:hover {
+    border-color: #ef4444; /* Smooth hover border-color change */
+}
+
+.solid {
+    border: 5px solid #334155;
+    padding: 10px;
+}
+
+.dashed {
+    border: 5px dashed #334155;
+    padding: 20px;
+}
+
+.double {
+    border: 8px double #334155;
+    padding: 30px;
+}
+
+.groove {
+    border: 8px groove #334155;
+    padding: 40px;
+}
+
+.rounded {
+    border: 5px solid #334155;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+footer {
+    margin-top: 10px;
+}

@@ -1,0 +1,78 @@
+/* Q6: Transformations activated on hover */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    color: #1e1b4b;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #312e81;
+    color: white;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.transformations {
+    display: flex; /* Horizontal arrangement */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+.transform-item {
+    width: 170px;
+    text-align: center;
+}
+
+.box {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6366f1;
+    color: white;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.4s ease; /* Required smooth transition */
+}
+
+.rotate:hover {
+    transform: rotate(12deg);
+}
+
+.scale:hover {
+    transform: scale(1.2);
+}
+
+.translate:hover {
+    transform: translateY(-15px);
+}
+
+.skew:hover {
+    transform: skew(10deg);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: white;
+}

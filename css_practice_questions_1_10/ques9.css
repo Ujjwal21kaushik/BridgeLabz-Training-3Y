@@ -1,0 +1,93 @@
+/* Q9: Form outlines, focus states, spacing, padding and shadows */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #e0f2fe;
+    color: #0f172a;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #075985;
+    color: white;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 20px;
+}
+
+.contact-form {
+    width: min(500px, 100%);
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px #0002;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Uniform spacing */
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #cbd5e1;
+    border-radius: 9px;
+    font: inherit;
+    background: #f8fafc;
+    transition: outline 0.25s ease, border-color 0.25s ease;
+}
+
+input:focus {
+    border-color: #2563eb;
+    outline: 3px solid #93c5fd; /* Solid focus outline */
+    outline-offset: 3px;
+}
+
+textarea:focus {
+    border-color: #16a34a;
+    outline: 3px dashed #86efac; /* Dashed focus outline */
+    outline-offset: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: 0;
+    border-radius: 9px;
+    background: #0f172a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 4px double #f59e0b; /* Double outline example */
+    outline-offset: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: white;
+}

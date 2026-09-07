@@ -1,0 +1,119 @@
+/* Q5: Advanced CSS selectors */
+
+/* Attribute selector: selects input elements whose type is exactly "text". */
+input[type="text"] {
+    border: 3px solid #2563eb;
+}
+
+/* Attribute selector: selects links whose href starts with "https". */
+a[href^="https"] {
+    color: #15803d;
+    font-weight: bold;
+}
+
+/* Pseudo-class :hover applies when the mouse is over a link. */
+a:hover {
+    color: #dc2626;
+}
+
+/* Pseudo-class :focus applies when an input receives focus. */
+input:focus {
+    outline: 3px solid #f59e0b;
+}
+
+/* :nth-child() styles every second list item. */
+.items li:nth-child(even) {
+    background: #dbeafe;
+}
+
+/* Pseudo-element ::before inserts content before every list item. */
+.items li::before {
+    content: "✓ ";
+    color: #16a34a;
+}
+
+/* Pseudo-element ::after inserts content after the heading. */
+.selector-demo h2::after {
+    content: " ★";
+    color: #f59e0b;
+}
+
+/* Descendant combinator: every p inside .intro is selected. */
+.intro p {
+    color: #475569;
+}
+
+/* Child combinator >: only direct p children of .combinators. */
+.combinators > p {
+    font-weight: bold;
+}
+
+/* Adjacent sibling +: selects the p immediately after the span. */
+.combinators span + p {
+    color: #7c3aed;
+}
+
+/* General sibling ~: selects all p siblings after the span. */
+.combinators span ~ p {
+    text-decoration: underline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header {
+    text-align: center;
+    padding: 28px;
+    background: #172554;
+    color: white;
+}
+
+main {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.selector-demo {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px #0002;
+}
+
+input {
+    margin: 5px;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+.links a {
+    margin-right: 18px;
+}
+
+.items {
+    padding: 0;
+    list-style: none;
+}
+
+.items li {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: white;
+}

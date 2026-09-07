@@ -1,0 +1,102 @@
+/* Q10: Navigation padding, borders, transitions, active state and responsive layout */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+.site-header {
+    background: #0f172a;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 11px 16px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.navbar a:hover {
+    background: #334155;
+    border-color: #94a3b8;
+    transform: translateY(-2px);
+}
+
+.navbar a.active {
+    background: #2563eb; /* Distinct active link */
+    border-color: #60a5fa;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.hero {
+    max-width: 700px;
+    padding: 45px;
+    text-align: center;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #0002;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-top: 0;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        width: 100%;
+        flex-direction: column; /* Stack links vertically */
+    }
+
+    .navbar a {
+        width: 100%;
+        text-align: center;
+    }
+}
