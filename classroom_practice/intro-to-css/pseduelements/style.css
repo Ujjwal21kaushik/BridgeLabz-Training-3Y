@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.nav {
+    width: 100%;
+    height: 8vh;
+    background-color: antiquewhite;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.item {
+    position: relative;
+    cursor: pointer;
+    height: 25px;
+
+    perspective: 600px;
+}
+
+.item span {
+    display: block;
+    transition: transform 0.5s ease;
+    transform-origin: bottom;
+}
+
+.item::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotateX(90deg);
+    transform-origin: top;
+
+    transition: transform 0.6s ease;
+}
+
+
+.item:hover span {
+    transform: rotateX(90deg);
+}
+
+
+.item:hover::after {
+    transform: rotateX(0deg);
+}
+
+.mess {
+    position: relative;
+    margin: 60px 60px;
+    width: 8rem;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.mess::after {
+    content: "Message about Me";
+
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+
+    width: 8rem;
+    height: 3vh;
+
+    /* border: 1px solid black; */
+    background-color: rgba(248, 231, 208, 0.971);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.4s ease;
+
+    padding-top: 8px;
+
+    z-index: 2;
+}
+
+.mess::before {
+    content: "";
+
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+
+    width: 10px;
+    height: 10px;
+
+    background-color: rgba(248, 231, 208, 0.971);
+    /* border-right: 1px solid black;
+    border-bottom: 1px solid black; */
+
+    transform: translateX(-50%) rotate(45deg);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.4s ease;
+
+    z-index: 1;
+}
+
+.mess:hover::after,
+.mess:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
